@@ -1,0 +1,42 @@
+{
+  "name": "mereb_project",
+  "version": "1.0.0",
+  "description": "This is a simple Mereb Technologies Back-end Project",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --watch",
+    "build": "tsc",
+    "start": "node ./dist/index.js",
+    "start-local": "nodemon ./dist/index.js",
+    "start-dev": "cross-env NODE_ENV=development nodemon ./dist/index.js",
+    "start-qa": "cross-env NODE_ENV=qa nodemon ./dist/index.js",
+    "start-prod": "cross-env NODE_ENV=production nodemon ./dist/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/NebyuCodes/mereb_project.git"
+  },
+  "keywords": [
+    "Mereb",
+    "Nebyu",
+    "API",
+    "Back-end"
+  ],
+  "author": "Nebyu Samuel",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NebyuCodes/mereb_project/issues"
+  },
+  "homepage": "https://github.com/NebyuCodes/mereb_project#readme",
+  "dependencies": {
+    "@types/cors": "^2.8.17",
+    "@types/express": "^5.0.0",
+    "cors": "^2.8.5",
+    "cross-env": "^7.0.3",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.1",
+    "helmet": "^8.0.0",
+    "joi": "^17.13.3",
+    "mongoose": "^8.7.3"
+  }
+}
